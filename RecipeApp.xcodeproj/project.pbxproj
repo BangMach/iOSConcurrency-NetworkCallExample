@@ -16,6 +16,9 @@
 		30BC7EB3240AB1BB0000AC5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30BC7EB1240AB1BB0000AC5B /* LaunchScreen.storyboard */; };
 		30BC7EBE240AB1BC0000AC5B /* RecipeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BC7EBD240AB1BC0000AC5B /* RecipeAppTests.swift */; };
 		30BC7EC9240AB1BC0000AC5B /* RecipeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BC7EC8240AB1BC0000AC5B /* RecipeAppUITests.swift */; };
+		30BC7ED9240ACBF00000AC5B /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BC7ED8240ACBF00000AC5B /* Recipe.swift */; };
+		30BC7EDB240ACC830000AC5B /* REST_Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BC7EDA240ACC830000AC5B /* REST_Request.swift */; };
+		30BC7EDD240AE4FA0000AC5B /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BC7EDC240AE4FA0000AC5B /* RecipeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		30BC7EC4240AB1BC0000AC5B /* RecipeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BC7EC8240AB1BC0000AC5B /* RecipeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppUITests.swift; sourceTree = "<group>"; };
 		30BC7ECA240AB1BC0000AC5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30BC7ED8240ACBF00000AC5B /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		30BC7EDA240ACC830000AC5B /* REST_Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REST_Request.swift; sourceTree = "<group>"; };
+		30BC7EDC240AE4FA0000AC5B /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3077EE4325358194004DF205 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30BC7ED8240ACBF00000AC5B /* Recipe.swift */,
+				30BC7EDA240ACC830000AC5B /* REST_Request.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3077EE442535819A004DF205 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30BC7EA7240AB1B90000AC5B /* ViewController.swift */,
+				30BC7EA9240AB1B90000AC5B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		30BC7E97240AB1B90000AC5B = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +125,11 @@
 		30BC7EA2240AB1B90000AC5B /* RecipeApp */ = {
 			isa = PBXGroup;
 			children = (
+				3077EE442535819A004DF205 /* View */,
+				3077EE4325358194004DF205 /* Model */,
+				30BC7EDE240AE5020000AC5B /* ViewModel */,
 				30BC7EA3240AB1B90000AC5B /* AppDelegate.swift */,
 				30BC7EA5240AB1B90000AC5B /* SceneDelegate.swift */,
-				30BC7EA7240AB1B90000AC5B /* ViewController.swift */,
-				30BC7EA9240AB1B90000AC5B /* Main.storyboard */,
 				30BC7EAF240AB1BB0000AC5B /* Assets.xcassets */,
 				30BC7EB1240AB1BB0000AC5B /* LaunchScreen.storyboard */,
 				30BC7EB4240AB1BB0000AC5B /* Info.plist */,
@@ -129,6 +154,14 @@
 				30BC7ECA240AB1BC0000AC5B /* Info.plist */,
 			);
 			path = RecipeAppUITests;
+			sourceTree = "<group>";
+		};
+		30BC7EDE240AE5020000AC5B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				30BC7EDC240AE4FA0000AC5B /* RecipeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +298,10 @@
 				30BC7EA8240AB1B90000AC5B /* ViewController.swift in Sources */,
 				30BC7EA4240AB1B90000AC5B /* AppDelegate.swift in Sources */,
 				30BC7EA6240AB1B90000AC5B /* SceneDelegate.swift in Sources */,
+				30BC7EDD240AE4FA0000AC5B /* RecipeViewModel.swift in Sources */,
+				30BC7EDB240ACC830000AC5B /* REST_Request.swift in Sources */,
 				30BC7EAE240AB1B90000AC5B /* RecipeApp.xcdatamodeld in Sources */,
+				30BC7ED9240ACBF00000AC5B /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
